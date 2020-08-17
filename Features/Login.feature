@@ -14,3 +14,9 @@ Feature: Login page functionalities
     When we enter incorrect username & password
     And  click on login button
     Then There should be error message
+
+
+  Scenario: to test the functionality new page
+    Given we are on the new page
+    And  click on first button
+    Then There should be next page

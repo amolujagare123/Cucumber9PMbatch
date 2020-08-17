@@ -3,9 +3,13 @@
 
 Feature: A Login dummy examples
 
+  Background: initial steps
+    Given I open browser
+    And I Maximize it
+
   @dummyLogin
   Scenario: to test the functionality of login page for valid username & password
-    Given we are on the login page
+
     When we enter "admin" & "admin"
     And  click on login button
     Then we should land up to the home page
